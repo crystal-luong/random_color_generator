@@ -1,5 +1,5 @@
 const containerEl = document.querySelector(".container");
-
+const buttonEl = document.getElementById("button");
 for(let i = 0; i < 32; ++i) {
     const colorContainerEl = document.createElement("div");
     colorContainerEl.classList.add("container-section");
@@ -27,6 +27,11 @@ function randomColor() {
     return newColor;
 }
 generateColors();
+buttonEl.addEventListener("click", () => {
+    window.location.reload();
+})
+
+
 
 
 
